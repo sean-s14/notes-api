@@ -20,6 +20,9 @@ class NoteList(ListAPIView):
     queryset = Note.objects.all()
     serializer_class = NoteSerializer
 
+    def get_queryset(self):
+        return super().get_queryset().order_by('-id')
+
 
 class NoteRetrieve(RetrieveAPIView):
     queryset = Note.objects.all()
