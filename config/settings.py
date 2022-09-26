@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     # Custom
     'auth2',
     'notes',
+    'tasks',
 ]
 
 MIDDLEWARE = [
