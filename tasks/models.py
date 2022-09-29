@@ -7,8 +7,4 @@ class Task(models.Model):
     completed    = models.BooleanField(default=False, blank=True, null=True)
 
     def __str__(self):
-<<<<<<< HEAD
         return self.text
-=======
-        return self.title
->>>>>>> b1f76a6887218d337153ed3a83957055c90efa50
